@@ -56,10 +56,17 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="dummy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Impl\Impl.csproj">
+      <Project>{ed0c38d4-ee65-4bc3-baf6-bd8d0c7cd91d}</Project>
+      <Name>Impl</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
