@@ -38,6 +38,10 @@
     <Reference Include="Moq">
       <HintPath>..\packages\Moq.4.1.1309.1617\lib\net40\Moq.dll</HintPath>
     </Reference>
+    <Reference Include="StackFoo.Impl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\CEI\tfs\StackFoo\ILMerge\Lib\Impl\bin\Debug\StackFoo.Impl.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="xunit">
       <HintPath>..\packages\xunit.1.9.2\lib\net20\xunit.dll</HintPath>
@@ -61,12 +65,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Impl\Impl.csproj">
-      <Project>{ed0c38d4-ee65-4bc3-baf6-bd8d0c7cd91d}</Project>
-      <Name>Impl</Name>
-    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
