@@ -73,11 +73,11 @@
       <ReferenceAssemblies>$(MSBuildProgramFiles32)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5</ReferenceAssemblies>
       <!-- where your ilmerge is installed -->
       <ILMergePath>c:\Program Files (x86)\Microsoft\ILMerge</ILMergePath>
-      <NugetPackagesPath>c:\users\jamiep\personal\projects\dotnetstack\Lib\packages</NugetPackagesPath>
+      <NugetPackagesPath>$(SolutionDir)\packages</NugetPackagesPath>
     </PropertyGroup>
 
     <ItemGroup>
-      <dependency Include="$(nugetPackagesPath)\Newtonsoft.Json.5.0.6\lib\net45" />
+      <dependency Include="$(nugetPackagesPath)\Newtonsoft.Json.5.0.8\lib\net45" />
     </ItemGroup>
 
     <PropertyGroup>
