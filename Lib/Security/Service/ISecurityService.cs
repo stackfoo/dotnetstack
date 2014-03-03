@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace StackFoo.Security.Service {
     public interface ISecurityService {
 
-        bool TestCredentials(string securityToken, string passWord);
+        bool Authenticate(string securityToken, string passWord);
 
     }
 }

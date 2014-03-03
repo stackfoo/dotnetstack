@@ -21,7 +21,7 @@ namespace Sandbox {
 
 
             ISecurityService svc = container.Resolve<ISecurityService>();
-            Console.WriteLine(svc.TestCredentials("asdfasf", "asdfasdf"));
+            Console.WriteLine(svc.Authenticate("MagicHat", "ImNotAFairyTale"));
 
 
 
